@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">GeoProof Camera</title>
+  <desc id="desc">Location-stamped field photos and videos for Android</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06100d"/>
+      <stop offset="1" stop-color="#0f3024"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(950 110) rotate(127) scale(500 620)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50dda0" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#50dda0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pin" x1="766" y1="134" x2="1016" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76efb4"/>
+      <stop offset="1" stop-color="#36ca81"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g opacity=".12" stroke="#d7f7e5">
+    <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/>
+    <path d="M90 0v630M180 0v630M270 0v630M360 0v630M450 0v630M540 0v630M630 0v630M720 0v630M810 0v630M900 0v630M990 0v630M1080 0v630"/>
+  </g>
+  <g transform="translate(92 92)">
+    <rect width="82" height="82" rx="23" fill="#0c2119" stroke="#79eab2" stroke-opacity=".3"/>
+    <path d="M61 34c0 13.5-20 30-20 30S21 47.5 21 34a20 20 0 1 1 40 0Z" fill="url(#pin)"/>
+    <circle cx="41" cy="34" r="10" fill="#0b2018"/>
+    <circle cx="41" cy="34" r="5" fill="#b9f9d6"/>
+  </g>
+  <text x="92" y="245" fill="#f1f7f3" font-family="system-ui, sans-serif" font-size="74" font-weight="750" letter-spacing="-3">GeoProof Camera</text>
+  <text x="92" y="322" fill="#64e5a3" font-family="system-ui, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.5">Proof of place. Built into every capture.</text>
+  <text x="92" y="393" fill="#b9c9c1" font-family="system-ui, sans-serif" font-size="28">Location · direction · route distance · time · Proof ID</text>
+  <g transform="translate(92 456)">
+    <rect width="138" height="48" rx="24" fill="#143b2d"/>
+    <circle cx="24" cy="24" r="6" fill="#64e5a3"/>
+    <text x="42" y="31" fill="#dff8ea" font-family="system-ui, sans-serif" font-size="19" font-weight="700">Android</text>
+    <rect x="151" width="172" height="48" rx="24" fill="#143b2d"/>
+    <text x="176" y="31" fill="#dff8ea" font-family="system-ui, sans-serif" font-size="19" font-weight="700">Privacy-minded</text>
+  </g>
+  <g transform="translate(800 98)">
+    <circle cx="150" cy="215" r="196" fill="none" stroke="#64e5a3" stroke-opacity=".17"/>
+    <circle cx="150" cy="215" r="142" fill="none" stroke="#64e5a3" stroke-opacity=".22" stroke-dasharray="7 13"/>
+    <path d="M270 188c0 81-120 182-120 182S30 269 30 188a120 120 0 1 1 240 0Z" fill="url(#pin)"/>
+    <circle cx="150" cy="184" r="57" fill="#0b2018"/>
+    <circle cx="150" cy="184" r="28" fill="#b9f9d6"/>
+    <circle cx="250" cy="340" r="50" fill="#f7fffA" stroke="#0c2119" stroke-width="10"/>
+    <path d="m228 340 15 15 30-34" fill="none" stroke="#148556" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

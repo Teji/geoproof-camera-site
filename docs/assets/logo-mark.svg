@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">GeoProof Camera logo</title>
+  <desc id="desc">A location pin with a camera lens and verification tick</desc>
+  <defs>
+    <linearGradient id="bg" x1="8" y1="5" x2="56" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76efb4"/>
+      <stop offset="1" stop-color="#36ca81"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#0c2119"/>
+  <path d="M47.5 26.5c0 10.5-15.5 23.5-15.5 23.5S16.5 37 16.5 26.5a15.5 15.5 0 1 1 31 0Z" fill="url(#bg)"/>
+  <circle cx="32" cy="26" r="8.2" fill="#0b2018"/>
+  <circle cx="32" cy="26" r="4.2" fill="#b9f9d6"/>
+  <circle cx="45.5" cy="45.5" r="10.5" fill="#f9fffB" stroke="#0c2119" stroke-width="3"/>
+  <path d="m40.7 45.6 3.2 3.1 6.3-7" fill="none" stroke="#148556" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
