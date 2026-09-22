@@ -1,0 +1,17 @@
+{
+  "name": "GeoProof Camera",
+  "short_name": "GeoProof",
+  "description": "Location-stamped field photos and videos for Android.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07110e",
+  "theme_color": "#07140f",
+  "icons": [
+    {
+      "src": "assets/logo-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

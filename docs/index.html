@@ -3,12 +3,411 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GeoProof Camera</title>
+  <meta name="theme-color" content="#07140f">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="GeoProof Camera adds GPS location, direction, date, time, work-route distance and a unique Proof ID directly to field photos and videos.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://teji.github.io/geoproof-camera-site/">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GeoProof Camera — Field evidence with location built in">
+  <meta property="og:description" content="Create location-stamped photos and videos with GPS accuracy, direction, work-route distance and a unique Proof ID.">
+  <meta property="og:url" content="https://teji.github.io/geoproof-camera-site/">
+  <meta property="og:site_name" content="GeoProof Camera">
+  <meta property="og:image" content="https://teji.github.io/geoproof-camera-site/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>GeoProof Camera — Location-stamped field photos and videos</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GeoProof Camera",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Android",
+    "description": "An Android camera app for creating location-stamped field photos and videos with GPS accuracy, direction, work-route distance and a unique Proof ID.",
+    "url": "https://teji.github.io/geoproof-camera-site/",
+    "isAccessibleForFree": true,
+    "author": {
+      "@type": "Person",
+      "name": "Teji"
+    }
+  }
+  </script>
 </head>
-<body style="font-family:system-ui,sans-serif;max-width:760px;margin:60px auto;padding:20px;line-height:1.6">
-  <h1>GeoProof Camera</h1>
-  <p>Location-stamped photo and video evidence for field work.</p>
-  <p><a href="privacy-policy.html">Privacy Policy</a></p>
-  <p><a href="https://www.buymeacoffee.com/Teji">Support development</a></p>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="./" aria-label="GeoProof Camera home">
+        <img src="assets/logo-mark.svg" alt="" width="42" height="42">
+        <span>GeoProof <strong>Camera</strong></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu" data-nav-menu>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button-small button-ghost" href="support.html">Support project</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Built for real field work</p>
+          <h1>Proof of place.<br><em>Built into every capture.</em></h1>
+          <p class="hero-lead">Create photos and videos with location, GPS accuracy, direction, date, time, work-route distance and a unique Proof ID displayed directly on the media.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">
+              See how it works
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+            <a class="button button-secondary" href="support.html">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 8h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V8Z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 4v2m4-2v2m4-2v2"/></svg>
+              Support development
+            </a>
+          </div>
+
+          <div class="release-note" role="note">
+            <span class="release-dot" aria-hidden="true"></span>
+            <div><strong>Android release in preparation</strong><span>Google Play availability will be announced here.</span></div>
+          </div>
+
+          <ul class="trust-list" aria-label="Privacy highlights">
+            <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>No account</li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>No ads</li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>No analytics</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay" aria-label="Illustration of a GeoProof Camera capture">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="float-card float-card-location">
+            <span class="float-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <span><strong>GPS verified</strong><small>Accuracy ±8 m</small></span>
+          </div>
+
+          <div class="phone-shell">
+            <div class="phone-speaker" aria-hidden="true"></div>
+            <div class="camera-scene">
+              <div class="scene-sky"></div>
+              <div class="scene-building scene-building-left"></div>
+              <div class="scene-building scene-building-right"></div>
+              <div class="scene-road"></div>
+              <div class="camera-topline">
+                <span class="verified-pill"><span></span> GPS ±8 m</span>
+                <span class="camera-tool">Torch</span>
+                <span class="camera-tool">Flip</span>
+              </div>
+              <div class="focus-reticle" aria-hidden="true"><span></span></div>
+              <div class="proof-stamp proof-stamp-phone">
+                <div class="stamp-accent" aria-hidden="true"></div>
+                <div class="stamp-content">
+                  <div class="stamp-heading"><strong>GeoProof Camera</strong><span>GPS VERIFIED</span></div>
+                  <p>Field Site, Punjab, India</p>
+                  <p>30.759164°, 76.647808° &nbsp;•&nbsp; Accuracy ±8 m</p>
+                  <p class="stamp-highlight">Facing NE 42° &nbsp;•&nbsp; Work → Drive 1.8 km · 5 min</p>
+                  <p>21 Sep 2026 · 10:42 am · Field Team</p>
+                  <small>Proof ID A7C91F2B</small>
+                </div>
+              </div>
+            </div>
+            <div class="phone-controls" aria-hidden="true">
+              <span></span><button tabindex="-1"></button><span></span>
+            </div>
+          </div>
+
+          <div class="float-card float-card-route">
+            <span class="float-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h3a3 3 0 0 0 3-3V9a3 3 0 0 1 3-3"/></svg></span>
+            <span><strong>1.8 km from work</strong><small>Driving route · 5 min</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Product principles">
+      <div class="container proof-strip-grid">
+        <div><strong>On-device</strong><span>Media storage</span></div>
+        <div><strong>GPS + compass</strong><span>Capture context</span></div>
+        <div><strong>Photo + video</strong><span>Visible proof overlay</span></div>
+        <div><strong>One tap</strong><span>Gallery sharing</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> What it records</p>
+          <h2>Useful context, visible at a glance.</h2>
+          <p>Every detail is arranged as a clear, readable field stamp—without covering the whole capture.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-wide reveal">
+            <div class="feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <div>
+              <h3>GPS location and accuracy</h3>
+              <p>Show the resolved address, latitude, longitude and live accuracy reading directly on the captured media.</p>
+            </div>
+            <div class="mini-map" aria-hidden="true">
+              <span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-road road-three"></span>
+              <span class="map-pin"><i></i></span>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="m8 13 2.5-2.5L13 13l2-2 2 2.5M9 8h.01"/></svg></div>
+            <h3>Stamped photos and videos</h3>
+            <p>The same proof information appears on both media types, in portrait and landscape layouts.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 4 8-4 10-4-10 4-8Z"/><path d="m12 11 4 0"/></svg></div>
+            <h3>Direction that makes sense</h3>
+            <p>Compass heading is shown with a familiar direction label, such as “Facing NE 42°”.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h3a3 3 0 0 0 3-3V9a3 3 0 0 1 3-3"/></svg></div>
+            <h3>Driving distance from work</h3>
+            <p>Save the work location using GPS and display estimated road distance and travel time—not a straight-line guess.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M5 19h14"/></svg></div>
+            <h3>Gallery-ready and shareable</h3>
+            <p>Captures are saved to the device gallery and can be shared through Android directly from the app.</p>
+          </article>
+
+          <article class="feature-card feature-card-accent reveal">
+            <div class="feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div>
+            <h3>Designed with privacy in mind</h3>
+            <p>No account, advertising or analytics SDK. Photos, videos and profile details are not sent to a developer-operated server.</p>
+            <a class="text-link" href="privacy-policy.html">Read the full privacy policy <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-toned" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span></span> Simple workflow</p>
+          <h2>From setup to share in three steps.</h2>
+          <p>Made to stay out of the way when work needs to move quickly.</p>
+        </div>
+
+        <ol class="steps-grid">
+          <li class="step-card reveal">
+            <span class="step-number">01</span>
+            <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></div>
+            <h3>Set up your details</h3>
+            <p>Add the field identity shown on captures, then save the work location from the phone’s current GPS position.</p>
+          </li>
+          <li class="step-card reveal">
+            <span class="step-number">02</span>
+            <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h4l2-2h4l2 2h4v12H4z"/><circle cx="12" cy="13" r="3"/></svg></div>
+            <h3>Capture the work</h3>
+            <p>Choose photo or video. GeoProof prepares the visible stamp using the live location, direction and route estimate.</p>
+          </li>
+          <li class="step-card reveal">
+            <span class="step-number">03</span>
+            <div class="step-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.5 10.5 7-4m-7 7 7 4"/></svg></div>
+            <h3>Review and share</h3>
+            <p>Open the saved result, verify the stamp and share it through any compatible Android app.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section showcase" id="demo">
+      <div class="container showcase-grid">
+        <div class="showcase-copy reveal">
+          <p class="eyebrow"><span></span> Responsive proof overlay</p>
+          <h2>Readable in portrait.<br>Compact in landscape.</h2>
+          <p>The overlay adapts to the capture shape so important lines remain inside the media. Front-camera output keeps text readable while the image is handled correctly.</p>
+
+          <ul class="check-list">
+            <li><span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span>Compact typography for narrow screens</li>
+            <li><span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span>Safe margins around every edge</li>
+            <li><span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span>Consistent information on photo and video</li>
+          </ul>
+        </div>
+
+        <div class="device-stage reveal reveal-delay" aria-label="Portrait and landscape examples of the proof overlay">
+          <div class="demo-device demo-landscape">
+            <div class="demo-scene">
+              <span class="demo-sun"></span>
+              <span class="demo-panel panel-one"></span><span class="demo-panel panel-two"></span><span class="demo-panel panel-three"></span>
+              <div class="proof-stamp proof-stamp-demo">
+                <div class="stamp-accent"></div>
+                <div class="stamp-content">
+                  <div class="stamp-heading"><strong>GeoProof Camera</strong><span>GPS VERIFIED</span></div>
+                  <p>Installation Site, Punjab, India</p>
+                  <p>30.733315°, 76.779419° · Accuracy ±6 m</p>
+                  <p class="stamp-highlight">Facing SE 128° · Work → Drive 12.4 km · 24 min</p>
+                  <small>21 Sep 2026 · 04:18 pm · Proof ID 6D2C31AF</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-device demo-portrait">
+            <div class="portrait-scene">
+              <span class="portrait-wall"></span><span class="portrait-door"></span><span class="portrait-floor"></span>
+              <div class="proof-stamp proof-stamp-portrait">
+                <div class="stamp-accent"></div>
+                <div class="stamp-content">
+                  <div class="stamp-heading"><strong>GeoProof Camera</strong><span>GPS</span></div>
+                  <p>Service Site, Punjab, India</p>
+                  <p>Accuracy ±9 m · Facing N 8°</p>
+                  <p class="stamp-highlight">Work → Drive 3.2 km · 8 min</p>
+                  <small>Proof ID 47E9A310</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-toned" id="privacy">
+      <div class="container privacy-grid">
+        <div class="privacy-visual reveal" aria-hidden="true">
+          <div class="shield-ring shield-ring-one"></div>
+          <div class="shield-ring shield-ring-two"></div>
+          <div class="shield-core">
+            <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg>
+          </div>
+          <span class="privacy-label label-one">No account</span>
+          <span class="privacy-label label-two">No ads</span>
+          <span class="privacy-label label-three">No analytics</span>
+        </div>
+
+        <div class="privacy-copy reveal reveal-delay">
+          <p class="eyebrow"><span></span> Clear data choices</p>
+          <h2>Your field media stays under your control.</h2>
+          <p>GeoProof Camera stores profile settings locally and saves captures to the GeoProof folder in your device gallery. Sharing only happens when you choose Android’s Share action.</p>
+          <div class="privacy-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/></svg>
+            <p><strong>One limited network use:</strong> current and saved work coordinates are sent over HTTPS to the public OSRM service when calculating driving distance and estimated time. Media and employee details are not included.</p>
+          </div>
+          <a class="button button-secondary" href="privacy-policy.html">Read privacy policy</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section use-cases">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Made for the field</p>
+          <h2>One clear record across many kinds of work.</h2>
+        </div>
+        <div class="use-case-grid">
+          <article class="use-case-card reveal"><span>01</span><h3>Site installations</h3><p>Document completed equipment and its capture location.</p></article>
+          <article class="use-case-card reveal"><span>02</span><h3>Maintenance visits</h3><p>Record before-and-after media with time and direction context.</p></article>
+          <article class="use-case-card reveal"><span>03</span><h3>Delivery confirmation</h3><p>Create a shareable location-stamped record at the destination.</p></article>
+          <article class="use-case-card reveal"><span>04</span><h3>Field inspections</h3><p>Keep visual reports consistent across sites and team members.</p></article>
+        </div>
+        <p class="disclaimer reveal">GeoProof captures are field records. GPS accuracy and route estimates can vary; follow your organisation’s verification and legal requirements.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Questions</p>
+          <h2>Good to know before you capture.</h2>
+          <p>Simple answers about storage, location and sharing.</p>
+        </div>
+
+        <div class="faq-list reveal reveal-delay">
+          <details>
+            <summary>Does the app upload my photos or videos?<span></span></summary>
+            <p>No. Captured media is saved to the GeoProof folder in your device gallery and is shared only when you choose to share it.</p>
+          </details>
+          <details>
+            <summary>How is the work location saved?<span></span></summary>
+            <p>The app uses the phone’s live GPS location. Latitude and longitude are not manually editable, helping prevent accidental or arbitrary work coordinates.</p>
+          </details>
+          <details>
+            <summary>Is “distance from work” a straight line?<span></span></summary>
+            <p>No. GeoProof requests a driving route estimate from the public OSRM service and displays road distance with estimated travel time.</p>
+          </details>
+          <details>
+            <summary>Does video include the same proof stamp?<span></span></summary>
+            <p>Yes. Photos and videos include the same core location, direction, route, identity, time and Proof ID information.</p>
+          </details>
+          <details>
+            <summary>Does the app run location tracking in the background?<span></span></summary>
+            <p>No. The app uses foreground location for setup and capture features; it does not request background location permission.</p>
+          </details>
+          <details>
+            <summary>Is project support required?<span></span></summary>
+            <p>No. Supporting the project is entirely optional and does not unlock features, rewards or special access.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-grid" aria-hidden="true"></div>
+          <div>
+            <p class="eyebrow"><span></span> Independent Android project</p>
+            <h2>Help keep GeoProof moving.</h2>
+            <p>If this idea helps your field work, you can support continued testing, maintenance and future improvements.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-coffee" href="https://www.buymeacoffee.com/Teji" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">☕</span> Buy me a coffee
+            </a>
+            <a class="text-link light-link" href="support.html">Why support the project? <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./"><img src="assets/logo-mark.svg" alt="" width="42" height="42"><span>GeoProof <strong>Camera</strong></span></a>
+        <p>Location-stamped photo and video records for Android field work.</p>
+      </div>
+      <div class="footer-links">
+        <div><strong>Product</strong><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a></div>
+        <div><strong>Project</strong><a href="privacy-policy.html">Privacy policy</a><a href="support.html">Support development</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> GeoProof Camera.</span>
+      <span>Built for clear, responsible field records.</span>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
 </body>
 </html>
